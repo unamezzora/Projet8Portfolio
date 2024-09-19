@@ -1,0 +1,30 @@
+@import '../../index.scss';
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: end;
+    //margin-left: 30px;
+    margin-right: 30px;
+    @media (max-width: 768px) {
+        justify-content:start;
+        margin-top: 35px;
+        margin-right: 10px;
+    }
+    
+
+    &__link {
+        writing-mode: vertical-rl;
+        transform: scale(-1);
+        text-decoration: none;
+        font-size: 24px;
+        color: inherit;
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+        &:focus, &:active {
+            color: inherit;
+        }
+    }
+}

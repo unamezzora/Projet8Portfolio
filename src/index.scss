@@ -1,0 +1,37 @@
+//Variables
+
+$blue: #66AAC7;
+$vert: #93c2b8;
+$gris: #5e6472;
+$beige: #faf3dd;
+$rose: #ffa69e;
+
+$principal-font-family: 'Montserrat Alternates';
+$paddingBloc: 15px;
+
+
+
+body {
+    min-width: 320px;
+    max-width: 1440px;
+    height: 100%;
+    margin: auto;
+    font-family: $principal-font-family;
+    padding: 20px 20px;
+
+}
+
+html {
+    height: 100%;
+}
+
+
+
+.layout {
+    display: flex;
+}
+
+.contenu {
+ width: 100%;
+    box-sizing: border-box;
+}
