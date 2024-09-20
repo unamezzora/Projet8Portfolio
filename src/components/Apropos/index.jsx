@@ -4,6 +4,7 @@ import photo from '../../assets/photo.svg'
 import WebDev from '../../assets/WebDev.svg'
 import weblink from '../../assets/weblink.svg'
 import ordinateur from '../../assets/ordinateur.svg'
+import pages from '../../assets/pages.png'
 import './apropos.scss'
 import { Fade } from 'react-reveal'
 import { motion } from 'framer-motion'
@@ -140,8 +141,6 @@ function Apropos() {
               type: 'spring',
               duration: 2.5,
             }}
-            whileHover={{ scaleX: 1.02 }}
-            whileTap={{ scaleX: 0.98 }}
           >
             <motion.img
               className="blocMenu__contenu2__blocNoir__image"
@@ -156,14 +155,16 @@ function Apropos() {
               }}
             />
             <motion.a
-              className="blocMenu__contenu2__blocNoir__text"
+              className="blocMenu__contenu2__blocNoir__icon"
               href="#projets"
               onClick={(e) => {
                 e.preventDefault()
                 handleScroll('projets')
               }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.98 }}
             >
-              Mes projets
+              <img src={pages} alt="Pages" />
             </motion.a>
           </motion.div>
           <motion.a
@@ -177,7 +178,7 @@ function Apropos() {
             }}
             whileHover={{ scaleX: 0.9 }}
             drag="x"
-            dragConstraints={{ left: -150, right: 0 }}
+            dragConstraints={{ left: -100, right: 0 }}
           >
             Projets
           </motion.a>

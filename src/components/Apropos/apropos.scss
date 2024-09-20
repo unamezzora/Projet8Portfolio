@@ -231,10 +231,15 @@
             &__image {
                 width: 30%;
             }
-            &__text {
-                color: white;
-                padding: $paddingBloc;
-                text-decoration: none;
+            &__icon {
+                display: flex;
+                justify-content: right;
+                box-sizing: border-box;
+                width: 25%;
+                img {
+                    padding: $paddingBloc;
+                    width: 50%;
+                }
             }
         }
 
