@@ -222,11 +222,19 @@
         }
 
         &__blocNoir {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
             background-color: black;
             width: 70%;
             border-radius: 20px 25px 25px 20px;
             &__image {
                 width: 30%;
+            }
+            &__text {
+                color: white;
+                padding: $paddingBloc;
+                text-decoration: none;
             }
         }
 
