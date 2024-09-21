@@ -1,6 +1,7 @@
 import Competence from '../../components/Competences'
 import Apropos from '../../components/Apropos'
 import Header from '../../components/Header'
+import { Contact } from '../../components/Contact'
 import weblinklong from '../../assets/weblinklong.svg'
 import '../../style/home.scss'
 import { motion } from 'framer-motion'
@@ -49,6 +50,7 @@ function Home() {
         <Header />
         <div className="pagehome__contact__contenu">
           <h1 className="pagehome__contact__contenu__titre">Me contacter˺</h1>
+          <Contact />
         </div>
       </div>
     </div>
