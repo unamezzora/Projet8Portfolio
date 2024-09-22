@@ -5,8 +5,8 @@ import WebDev from '../../assets/WebDev.svg'
 import weblink from '../../assets/weblink.svg'
 import ordinateur from '../../assets/ordinateur.svg'
 import pages from '../../assets/pages.png'
+import bleu from '../../assets/circleB.png'
 import './apropos.scss'
-import { Fade } from 'react-reveal'
 import { motion } from 'framer-motion'
 
 gsap.registerPlugin(ScrollToPlugin)
@@ -142,6 +142,11 @@ function Apropos() {
               duration: 2.5,
             }}
           >
+            <img
+              className="blocMenu__contenu2__blocNoir__imageBleu"
+              src={bleu}
+              alt="Abstraction"
+            />
             <motion.img
               className="blocMenu__contenu2__blocNoir__image"
               src={weblink}
@@ -154,6 +159,7 @@ function Apropos() {
                 duration: 5.5,
               }}
             />
+
             <motion.a
               className="blocMenu__contenu2__blocNoir__icon"
               href="#projets"
@@ -167,7 +173,7 @@ function Apropos() {
               <img src={pages} alt="Pages" />
             </motion.a>
           </motion.div>
-          <motion.a
+          <motion.div
             className="blocMenu__contenu2__blocBeige"
             initial={{ opacity: 0, x: 600 }}
             animate={{ opacity: 1, x: 0 }}
@@ -176,12 +182,13 @@ function Apropos() {
               type: 'spring',
               duration: 3.0,
             }}
-            whileHover={{ scaleX: 0.9 }}
+            whileHover={{ scaleX: 0.9, transformOrigin: 'left' }}
+            style={{ transformOrigin: 'left' }}
             drag="x"
             dragConstraints={{ left: -100, right: 0 }}
           >
             Projets
-          </motion.a>
+          </motion.div>
         </div>
       </div>
     </div>
