@@ -1,11 +1,10 @@
+@import '../../index.scss';
+
 .bloc {
     display: flex;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
-
-
-
     margin-bottom: 30%;
 
     @media (max-width: 768px){
@@ -17,13 +16,55 @@
 
 
     &__img {
-@media (max-width: 768px){
-height: 70px;
+        position: relative;
+        @media (max-width: 768px){
+        height: 70px;
          }
 
         img {
             width: 100%;
             height: 100%;
+        }
+        &__titre {
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 24px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            &--html {
+                background-color: $blue;
+                padding-left: 10px;
+                box-sizing: border-box;
+            }
+            &--react {
+                background-color: $gris;
+            }
+            &--sass {
+                background-color: $rose;
+            }
+            &--node {
+                background-color: $beige;
+                color: $gris;
+            }
+            &--github {
+                background-color: black;
+            }
+
+            &:hover {
+                opacity: 0.85;
+            }
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                border-radius: 10px;
+            }
 
         }
         

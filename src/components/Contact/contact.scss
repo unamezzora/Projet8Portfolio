@@ -1,44 +1,65 @@
 @import '../../index.scss';
 
 .contact {
+    width: 870px;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
 
     &__form {
         display: flex;
         flex-direction: column;
-        font-size: 24px;
-        &__nom {
-            padding: 1%;
+        gap: 30px;
+
+        &__bloc {
+            padding: 2%;
             background-color: rgba(250, 243, 221, 0.25);
             border-radius: 20px;
-            border: 3px solid $beige;
+            border: 6px solid $beige;
             font-size: 24px;
             font-family: $principal-font-family;
-        }
-        &__email {
-            padding: 1%;
-            background-color: rgb(255, 166, 158, 0.25);
-            border-radius: 20px;
-            border: 3px solid $rose;
-            font-size: 24px;
-            font-family: $principal-font-family;
-        }
-        &__message {
-            padding: 1%;
-            background-color: rgba(250, 243, 221, 0.25);
-            border-radius: 20px;
-            border: 3px solid $beige;
-            font-size: 24px;
-            font-family: $principal-font-family;
-        }
-        &__bouton {
-            padding: 1%;
+            &--email {
+                background-color: rgb(255, 166, 158, 0.25);
+                border-color: $rose;
+            }
+            &--message {
+                height: 150px;
+            }
+            &--bouton {
             background-color: $blue;
-            border-radius: 20px;
             border: none;
-            font-size: 24px;
-            font-family: $principal-font-family;
-            color: $gris;
+            color: black;
+            font-weight: bold;
+            }
+            &:focus {
+                outline: 0;
+                border-color: $blue;
+                background-color: rgb(102, 170, 199, 0.25);
+            }
+            @media (max-width: 1024px) {
+                font-size: 16px;
+            }
         }
 
+    }
+    &__adresse {
+        display: flex;
+        gap: 2%;
+        font-size: 24px;
+        margin-top: 10%;
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+    
+    &__message {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        color: $blue;
+        font-weight: bold;
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
     }
 }  

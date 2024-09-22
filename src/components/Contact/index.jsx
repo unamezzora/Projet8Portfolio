@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import enveloppe from '../../assets/envelope .svg'
 import './contact.scss'
+import { motion } from 'framer-motion'
 
 export const Contact = () => {
   const form = useRef()
@@ -29,34 +30,33 @@ export const Contact = () => {
   return (
     <div className="contact">
       <form ref={form} onSubmit={sendEmail} className="contact__form">
-        <label>Nom</label>
         <input
           type="text"
           name="nom"
           placeholder="Nom"
-          className="contact__form__nom"
+          className="contact__form__bloc contact__form__bloc--nom"
         />
-        <label>Email</label>
         <input
           type="email"
           name="email"
-          placeholder="nom@mail.com"
-          className="contact__form__email"
+          placeholder="email@email.fr"
+          className="contact__form__bloc contact__form__bloc--email"
         />
-        <label>Message</label>
         <textarea
           name="message"
-          placeholder="Bonjour, "
-          className="contact__form__message"
+          placeholder="Message"
+          className="contact__form__bloc contact__form__bloc--message"
         />
-        <input
+        <motion.input
           type="submit"
           value="Envoyer"
-          className="contact__form__bouton"
+          className="contact__form__bloc contact__form__bloc--bouton"
+          whileHover={{ scale: 1.01 }}
+          whileTap={{ scale: 0.98 }}
         />
       </form>
-      {messageStatus && <p>{messageStatus}</p>}
-      <div className="contact__form__adresse">
+      {messageStatus && <p className="contact__message">{messageStatus}</p>}
+      <div className="contact__adresse">
         <img src={enveloppe} alt="Enveloppe" />
         <p>tatianayouss@gmail.com</p>
       </div>
