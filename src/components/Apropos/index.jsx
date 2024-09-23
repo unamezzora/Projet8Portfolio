@@ -5,7 +5,7 @@ import WebDev from '../../assets/WebDev.svg'
 import weblink from '../../assets/weblink.svg'
 import ordinateur from '../../assets/ordinateur.svg'
 import pages from '../../assets/pages.png'
-import bleu from '../../assets/circleB.png'
+import circle from '../../assets/circleB.png'
 import './apropos.scss'
 import { motion } from 'framer-motion'
 
@@ -144,7 +144,7 @@ function Apropos() {
           >
             <img
               className="blocMenu__contenu2__blocNoir__imageBleu"
-              src={bleu}
+              src={circle}
               alt="Abstraction"
             />
             <motion.img
