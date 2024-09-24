@@ -1,4 +1,5 @@
 import './card.scss'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 function Card({ projet }) {
@@ -8,7 +9,7 @@ function Card({ projet }) {
         <img src={projet.cover} alt={projet.title} />
       </div>
       <motion.div
-        className="card__couv"
+        className={`card__couv card__couv--${projet.color}`}
         whileHover={{ scaleX: 0.8, transformOrigin: 'right' }}
         style={{ transformOrigin: 'right' }}
         whileTap={{ scale: 0.98 }}
@@ -28,8 +29,13 @@ function Page({ projet }) {
           <div> {projet.title} </div>
           <div> {projet.description} </div>
           <div> {projet.skills} </div>
-          <div> {projet.github} </div>
-          <div></div>
+          <Link to={projet.github}>GitHub</Link>
+
+          <div>
+            {projet.images.map((image, index) => (
+              <img key={index} src={image} alt={projet.title} />
+            ))}
+          </div>
         </div>
       ) : (
         <p>Loading...</p>

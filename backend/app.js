@@ -18,10 +18,13 @@ app.use('/api/projet', (req, res, next) => {
             cover: 'https://www.agera.asso.fr/app/uploads/2020/08/Projet.jpg',
             images: [
                 'https://www.omebatobo.fr/wp-content/uploads/agence-de-voyage.jpg',
-                'https://www.parvisdesgentils.fr/wp-content/uploads/2020/02/agence-de-voyage.jpg'
+                'https://www.parvisdesgentils.fr/wp-content/uploads/2020/02/agence-de-voyage.jpg',
+                'https://www.autour-dumonde.fr/sx-content/uploads/cms/img-presentation-1.jpg',
+                'https://www.civitatis.com/blog/wp-content/uploads/2023/07/shutterstock_262168289-1920x1243.jpg',
             ],
             skills: 'HTML, CSS',
-            github: 'https://github.com/unamezzora/Projet1.git'
+            github: 'https://github.com/unamezzora/Projet1.git',
+            color: 'rose'
 
         },
         {
@@ -31,10 +34,13 @@ app.use('/api/projet', (req, res, next) => {
             cover: 'https://www.agera.asso.fr/app/uploads/2020/08/Projet.jpg',
             images: [
                 'https://www.omebatobo.fr/wp-content/uploads/agence-de-voyage.jpg',
-                'https://www.parvisdesgentils.fr/wp-content/uploads/2020/02/agence-de-voyage.jpg'
+                'https://www.parvisdesgentils.fr/wp-content/uploads/2020/02/agence-de-voyage.jpg',
+                'https://www.autour-dumonde.fr/sx-content/uploads/cms/img-presentation-1.jpg',
+                'https://www.civitatis.com/blog/wp-content/uploads/2023/07/shutterstock_262168289-1920x1243.jpg',
             ],
             skills: 'HTML, CSS, Java Script',
-            github: 'https://github.com/unamezzora/Projet3.git'
+            github: 'https://github.com/unamezzora/Projet3.git',
+            color: 'beige'
 
         },
         {
@@ -44,10 +50,13 @@ app.use('/api/projet', (req, res, next) => {
             cover: 'https://www.agera.asso.fr/app/uploads/2020/08/Projet.jpg',
             images: [
                 'https://www.omebatobo.fr/wp-content/uploads/agence-de-voyage.jpg',
-                'https://www.parvisdesgentils.fr/wp-content/uploads/2020/02/agence-de-voyage.jpg'
+                'https://www.parvisdesgentils.fr/wp-content/uploads/2020/02/agence-de-voyage.jpg',
+                'https://www.autour-dumonde.fr/sx-content/uploads/cms/img-presentation-1.jpg',
+                'https://www.civitatis.com/blog/wp-content/uploads/2023/07/shutterstock_262168289-1920x1243.jpg',
             ],
             skills: 'React, Sass',
-            github: 'https://github.com/unamezzora/Projet5.git'
+            github: 'https://github.com/unamezzora/Projet5.git',
+            color: 'beige'
 
         },
         {
@@ -57,10 +66,13 @@ app.use('/api/projet', (req, res, next) => {
             cover: 'https://www.agera.asso.fr/app/uploads/2020/08/Projet.jpg',
             images: [
                 'https://www.omebatobo.fr/wp-content/uploads/agence-de-voyage.jpg',
-                'https://www.parvisdesgentils.fr/wp-content/uploads/2020/02/agence-de-voyage.jpg'
+                'https://www.parvisdesgentils.fr/wp-content/uploads/2020/02/agence-de-voyage.jpg',
+                'https://www.autour-dumonde.fr/sx-content/uploads/cms/img-presentation-1.jpg',
+                'https://www.civitatis.com/blog/wp-content/uploads/2023/07/shutterstock_262168289-1920x1243.jpg',
             ],
             skills: 'Node.js, Express, MongoDB',
-            github: 'https://github.com/unamezzora/Projet6MVG.git'
+            github: 'https://github.com/unamezzora/Projet6MVG.git',
+            color: 'bleu'
         },
     ];
     res.status(200).json(projet);

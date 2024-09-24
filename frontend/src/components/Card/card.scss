@@ -32,6 +32,12 @@
         padding: $paddingBloc;
         box-sizing: border-box;
         color: $gris;
+        &--rose {
+            background-color: $rose;
+        }
+        &--bleu {
+            background-color: $blue;
+        }
         &__text {
             align-self: self-end;
             margin: 0;
