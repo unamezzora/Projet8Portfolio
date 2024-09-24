@@ -4,7 +4,7 @@ import Header from '../../components/Header'
 import { Contact } from '../../components/Contact'
 import weblinklong from '../../assets/weblinklong.svg'
 import '../../style/home.scss'
-import { motion } from 'framer-motion'
+import Projets from '../../components/Projets'
 
 function Home() {
   return (
@@ -36,14 +36,7 @@ function Home() {
         <Header />
         <div className="pagehome__projets__contenu">
           <h1 className="pagehome__projets__contenu__titre">Projets˺</h1>
-          <motion.div
-            className="pagehome__projets__contenu__bloc"
-            whileHover={{ scale: 1.2 }}
-            //drage="x"
-            //dragConstraints={{ left: -100, right: 100 }}
-          >
-            mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-          </motion.div>
+          <Projets />
         </div>
       </div>
       <div id="contact" className="pagehome__contact">

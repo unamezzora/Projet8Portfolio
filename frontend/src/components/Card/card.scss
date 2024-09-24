@@ -1,0 +1,43 @@
+@import '../../index.scss';
+
+.card {
+    position: relative;
+    display: flex;
+    height: 450px;
+    //width: 50%;
+    background-color: black;
+    border-radius: 20px 23px 23px 20px;
+    &__image {
+        
+
+        height: 100%;
+        img {
+            padding: 10px;
+            height: 90%;
+            border-radius: 20px;
+            //object-fit: cover;
+        }
+    }
+    &__couv {
+        background-color: $beige;
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: $paddingBloc;
+        box-sizing: border-box;
+        color: $gris;
+        &__text {
+            align-self: self-end;
+            margin: 0;
+        }
+        &__titre {
+            margin: 0;
+        }
+    }
+}
