@@ -1,5 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path');
+const Projet = require('./models/Projet');
 
 mongoose.connect("mongodb+srv://tatzemliakova:BgQsVONwry88jYAF@cluster0.fsw72.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
     { useNewUrlParser: true,
@@ -16,6 +18,21 @@ app.use((req, res, next) => {
     next();
   });
 
+app.get('/api/projet/:id', (req, res, next) => {
+    Projet.findOne({ _id: req.params.id })
+    .then(projet => res.status(200).json(projet))
+    .catch(error => res.status(404).json({ error}));
+});
+
+app.get('/api/projet', (req, res, next) => {
+    Projet.find()
+    .then(projets => res.status(200).json(projets))
+    .catch(error => res.status(400).json({ error }));
+});
+
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
+/*
 app.use('/api/projet', (req, res, next) => {
     const projet = [
         {
@@ -84,6 +101,6 @@ app.use('/api/projet', (req, res, next) => {
     ];
     res.status(200).json(projet);
 });
-
+*/
 
 module.exports = app;

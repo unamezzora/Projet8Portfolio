@@ -1,6 +1,7 @@
 import './card.scss'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import github from '../../assets/github.png'
 
 function Card({ projet }) {
   return (
@@ -25,17 +26,27 @@ function Page({ projet }) {
   return (
     <div>
       {projet ? (
-        <div>
-          <div> {projet.title} </div>
-          <div> {projet.description} </div>
-          <div> {projet.skills} </div>
-          <Link to={projet.github}>GitHub</Link>
+        <div className="page">
+          <div className="page__contenu">
+            <h1 className="page__contenu__titre"> {projet.title} </h1>
 
-          <div>
             {projet.images.map((image, index) => (
-              <img key={index} src={image} alt={projet.title} />
+              <div className="page__contenu__projet__image">
+                <img key={index} src={image} alt={projet.title} />
+              </div>
             ))}
+
+            <p className="page__contenu__description"> {projet.description} </p>
           </div>
+          <div className="page__compet"> {projet.skills} </div>
+          <Link
+            to={projet.github}
+            className="page__lien"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img className="page__lien__icon" src={github} alt="GitHub" />
+          </Link>
         </div>
       ) : (
         <p>Loading...</p>

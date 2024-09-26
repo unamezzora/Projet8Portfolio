@@ -13,7 +13,7 @@ function Portfolio() {
       fetch('http://localhost:4000/api/projet')
         .then((response) => response.json())
         .then((jsonResponse) => {
-          const projet = jsonResponse.find((item) => item.id === projetId)
+          const projet = jsonResponse.find((item) => item._id === projetId)
           if (!projet) {
             navigate('/*')
           }

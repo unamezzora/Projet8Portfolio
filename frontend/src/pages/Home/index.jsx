@@ -46,6 +46,13 @@ function Home() {
           <Contact />
         </div>
       </div>
+      <div className="pagehome__imageLink">
+        <img
+          className="pagehome__imageLink__img"
+          src={weblinklong}
+          alt="Abstraction"
+        />
+      </div>
     </div>
   )
 }

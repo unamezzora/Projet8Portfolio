@@ -18,7 +18,11 @@ function Projets() {
   return (
     <div className="projets">
       {data.map((projet) => (
-        <Link key={`${projet.id}`} to={`/projet/${projet.id}`}>
+        <Link
+          key={`${projet._id}`}
+          to={`/projet/${projet._id}`}
+          className="projets__card"
+        >
           <ViewProjet mode="card" projet={projet} />
         </Link>
       ))}

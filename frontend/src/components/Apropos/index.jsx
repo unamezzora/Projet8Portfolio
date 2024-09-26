@@ -93,7 +93,13 @@ function Apropos() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              CV
+              <a
+                href="https://www.linkedin.com/in/tatiana-zemliakova-youssoufa"
+                target="_blank"
+                rel="noreferrer"
+              >
+                CV
+              </a>
             </motion.div>
 
             <motion.a
