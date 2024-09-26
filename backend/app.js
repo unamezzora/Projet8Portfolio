@@ -22,7 +22,7 @@ app.get('/api/projet/:id', (req, res, next) => {
     Projet.findOne({ _id: req.params.id })
     .then(projet => res.status(200).json(projet))
     .catch(error => res.status(404).json({ error}));
-});
+})
 
 app.get('/api/projet', (req, res, next) => {
     Projet.find()

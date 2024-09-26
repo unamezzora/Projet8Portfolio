@@ -1,6 +1,4 @@
-//import { useLayoutEffect, useRef } from 'react'
-//import gsap from 'gsap'
-import { Fade } from 'react-reveal'
+import { motion } from 'framer-motion'
 import './competence.scss'
 import html from '../../assets/html.png'
 import react from '../../assets/react.png'
@@ -10,43 +8,98 @@ import github from '../../assets/github.png'
 
 function Competence() {
   return (
-    <div className="bloc">
-      <Fade left delay={500}>
-        <div className="bloc__img">
+    <div className="contenu">
+      <div className="contenu__comp">
+        <motion.div
+          className="contenu__comp__img"
+          initial={{ opacity: 0, x: -400 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            ease: 'easeOut',
+            type: 'spring',
+            duration: 2.0,
+          }}
+        >
           <img src={html} alt="HTML CSS JavaScript" />
-          <div className="bloc__img__titre bloc__img__titre--html">
+          <div className="contenu__comp__img__titre contenu__comp__img__titre--html">
             HTML CSS JavaScript
           </div>
-        </div>
-      </Fade>
-      <Fade top delay={600}>
-        <div className="bloc__img">
+        </motion.div>
+
+        <motion.div
+          className="contenu__comp__img"
+          initial={{ opacity: 0, y: -400 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            ease: 'easeOut',
+            type: 'spring',
+            duration: 2.0,
+          }}
+        >
           <img src={react} alt="React" />
-          <div className="bloc__img__titre bloc__img__titre--react">React</div>
-        </div>
-      </Fade>
-      <Fade bottom delay={700}>
-        <div className="bloc__img">
+          <div className="contenu__comp__img__titre contenu__comp__img__titre--react">
+            React
+          </div>
+        </motion.div>
+        <motion.div
+          className="contenu__comp__img"
+          initial={{ opacity: 0, y: 400 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            ease: 'easeOut',
+            type: 'spring',
+            duration: 2.0,
+          }}
+        >
           <img src={sass} alt="Sass" />
-          <div className="bloc__img__titre bloc__img__titre--sass">Sass</div>
-        </div>
-      </Fade>
-      <Fade top delay={800}>
-        <div className="bloc__img">
+          <div className="contenu__comp__img__titre contenu__comp__img__titre--sass">
+            Sass
+          </div>
+        </motion.div>
+        <motion.div
+          className="contenu__comp__img"
+          initial={{ opacity: 0, y: -400 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            ease: 'easeOut',
+            type: 'spring',
+            duration: 2.0,
+          }}
+        >
           <img src={node} alt="Node.js MongoDb Express" />
-          <div className="bloc__img__titre bloc__img__titre--node">
+          <div className="contenu__comp__img__titre contenu__comp__img__titre--node">
             Node.js <br /> MongoDB <br /> Express
           </div>
-        </div>
-      </Fade>
-      <Fade right delay={900}>
-        <div className="bloc__img">
+        </motion.div>
+        <motion.div
+          className="contenu__comp__img"
+          initial={{ opacity: 0, x: 400 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            ease: 'easeOut',
+            type: 'spring',
+            duration: 2.0,
+          }}
+        >
           <img src={github} alt="GitHub" />
-          <div className="bloc__img__titre bloc__img__titre--github">
+          <div className="contenu__comp__img__titre contenu__comp__img__titre--github">
             GitHub
           </div>
-        </div>
-      </Fade>
+        </motion.div>
+      </div>
+      <div className="contenu__formation">
+        <p className="contenu__formation__text">OpenClassrooms (Bac+2)</p>
+        <p className="contenu__formation__text">Développeur Web</p>
+        <motion.p
+          className="contenu__formation__couv"
+          whileHover={{ scaleX: 0.9, transformOrigin: 'right' }}
+          style={{ transformOrigin: 'right' }}
+          drag="x"
+          dragConstraints={{ left: 0, right: 400 }}
+        >
+          Formation:
+        </motion.p>
+      </div>
     </div>
   )
 }

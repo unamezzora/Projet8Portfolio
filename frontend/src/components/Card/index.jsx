@@ -2,6 +2,7 @@ import './card.scss'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import github from '../../assets/github.png'
+import { useState } from 'react'
 
 function Card({ projet }) {
   return (
@@ -23,6 +24,19 @@ function Card({ projet }) {
 }
 
 function Page({ projet }) {
+  const [isOpen, setIsOpen] = useState(false)
+  const [currentImage, setCurrentImage] = useState('')
+
+  const handleImageClick = (image) => {
+    setCurrentImage(image)
+    setIsOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsOpen(false)
+    setCurrentImage('')
+  }
+
   return (
     <div>
       {projet ? (
@@ -31,8 +45,12 @@ function Page({ projet }) {
             <h1 className="page__contenu__titre"> {projet.title} </h1>
 
             {projet.images.map((image, index) => (
-              <div className="page__contenu__projet__image">
-                <img key={index} src={image} alt={projet.title} />
+              <div className="page__contenu__projet__image" key={index}>
+                <img
+                  src={image}
+                  alt={projet.title}
+                  onClick={() => handleImageClick(image)}
+                />
               </div>
             ))}
 
@@ -50,6 +68,13 @@ function Page({ projet }) {
         </div>
       ) : (
         <p>Loading...</p>
+      )}
+
+      {isOpen && (
+        <div className="modal" onClick={closeModal}>
+          <span className="modal__close">&times;</span>
+          <img className="modal__image" src={currentImage} alt="Full Screen" />
+        </div>
       )}
     </div>
   )
