@@ -25,7 +25,7 @@ function Card({ projet }) {
 }
 
 Card.propTypes = {
-  projet: PropTypes.chape({
+  projet: PropTypes.shape({
     title: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
     skills: PropTypes.string.isRequired,
@@ -90,7 +90,7 @@ function Page({ projet }) {
 }
 
 Page.propTypes = {
-  projet: PropTypes.chape({
+  projet: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     cover: PropTypes.string.isRequired,
@@ -102,6 +102,10 @@ Page.propTypes = {
 }
 
 const ViewProjet = ({ mode, projet }) => {
+  if (!projet) {
+    return <div>Loading...</div>
+  }
+
   switch (mode) {
     case 'card':
       return <Card projet={projet} />

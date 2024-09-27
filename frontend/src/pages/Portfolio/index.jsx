@@ -28,7 +28,11 @@ function Portfolio() {
 
   return (
     <div>
-      <ViewProjet mode="page" projet={projetData} />
+      {projetData ? (
+        <ViewProjet mode="page" projet={projetData} />
+      ) : (
+        <p>La page que vous demandez n'existe pas</p>
+      )}
     </div>
   )
 }
