@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import github from '../../assets/github.png'
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
 function Card({ projet }) {
   return (
@@ -21,6 +22,14 @@ function Card({ projet }) {
       </motion.div>
     </div>
   )
+}
+
+Card.propTypes = {
+  projet: PropTypes.chape({
+    title: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    skills: PropTypes.string.isRequired,
+  }).isRequired,
 }
 
 function Page({ projet }) {
@@ -80,6 +89,18 @@ function Page({ projet }) {
   )
 }
 
+Page.propTypes = {
+  projet: PropTypes.chape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    skills: PropTypes.string.isRequired,
+    github: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+  }).isRequired,
+}
+
 const ViewProjet = ({ mode, projet }) => {
   switch (mode) {
     case 'card':
@@ -89,6 +110,11 @@ const ViewProjet = ({ mode, projet }) => {
     default:
       return <div>Invalid mode</div>
   }
+}
+
+ViewProjet.propTypes = {
+  mode: PropTypes.string.isRequired,
+  projet: PropTypes.object.isRequired,
 }
 
 export default ViewProjet

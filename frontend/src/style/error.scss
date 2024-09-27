@@ -1,0 +1,47 @@
+@import "../index.scss";
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+
+    &__text {
+        text-align: center;
+        background-color: $blue;
+        padding: 20%;
+        font-size: 64px;
+        color: $gris;
+        border-radius: 20px;
+        @media (max-width: 1024px) {
+            font-size: 40px;
+        }
+        @media (max-width: 768px) {
+            font-size: 24px;
+
+        }
+        span {
+            color: $rose;
+        }
+    }
+
+    &__link {
+        background-color: $gris;
+        position: absolute;
+        bottom: 15%;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 20px;
+        color: $blue;
+        font-weight: bold;
+        font-size: 24px;
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+
+    }
+}

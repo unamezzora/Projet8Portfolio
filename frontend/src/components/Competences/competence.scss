@@ -79,14 +79,15 @@
 }
 &__formation {
     width: 100%;
-    background-color: $gris;
+    //background-color: $gris;
+    border: 6px solid $gris;
     border-radius: 22px;
     position: relative;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
     &__text {
-        color: $beige;
+        color: $gris;
         font-size: 24px;
         padding: 10px;
         //width: 100%;
