@@ -2,12 +2,13 @@ import './projets.scss'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import ViewProjet from '../Card'
+//import data from '../../../public/data.json'
 
 function Projets() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    fetch(`http://localhost:4000/api/projet`).then((response) =>
+    fetch(`/data.json`).then((response) =>
       response
         .json()
         .then((data) => setData(data))

@@ -10,7 +10,7 @@ function Portfolio() {
 
   useEffect(() => {
     if (projetId) {
-      fetch('http://localhost:4000/api/projet')
+      fetch('/data.json')
         .then((response) => response.json())
         .then((jsonResponse) => {
           const projet = jsonResponse.find((item) => item._id === projetId)

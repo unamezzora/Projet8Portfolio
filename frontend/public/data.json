@@ -2,12 +2,12 @@
     "_id": "66f42ba7bb8ddc0829300572",
     "title": "Booki",
     "description": "Une agence de voyage qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix",
-    "cover": "http://localhost:4000/images/booki.png",
+    "cover": "/images/booki.png",
     "images": [
-      "http://localhost:4000/images/booki.png",
-      "http://localhost:4000/images/booki_1.png",
-      "http://localhost:4000/images/booki_2.png",
-      "http://localhost:4000/images/booki_sm.png"
+      "/images/booki.png",
+      "/images/booki_1.png",
+      "/images/booki_2.png",
+      "/images/booki_sm.png"
     ],
     "skills": "HTML, CSS\n",
     "github": "https://github.com/unamezzora/Projet1.git",
@@ -17,12 +17,12 @@
     "_id": "66f42ba7bb8ddc0829300577",
     "title": "Sophie Bluel",
     "description": "Un site portfolio d’une architecte d’intérieur Sophie Bluel",
-    "cover": "http://localhost:4000/images/SB.png",
+    "cover": "/images/SB.png",
     "images": [
-      "http://localhost:4000/images/SB_ajout.png",
-      "http://localhost:4000/images/SB_login.png",
-      "http://localhost:4000/images/SB_supr.png",
-      "http://localhost:4000/images/SB.png"
+      "/images/SB_ajout.png",
+      "/images/SB_login.png",
+      "/images/SB_supr.png",
+      "/images/SB.png"
     ],
     "skills": "HTML, CSS, Java Script",
     "github": "https://github.com/unamezzora/Projet3.git",
@@ -32,12 +32,12 @@
     "_id": "66f42ba9bb8ddc0829300577",
     "title": "Kasa",
     "description": "Une entreprise de location d’appartements entre particuliers",
-    "cover": "http://localhost:4000/images/kasa.png",
+    "cover": "/images/kasa.png",
     "images": [
-      "http://localhost:4000/images/kasa.png",
-      "http://localhost:4000/images/kasa_apropos.png",
-      "http://localhost:4000/images/kasa_card_sm.png",
-      "http://localhost:4000/images/kasa_card.png"
+      "/images/kasa.png",
+      "/images/kasa_apropos.png",
+      "/images/kasa_card_sm.png",
+      "/images/kasa_card.png"
     ],
     "skills": "React, Sass",
     "github": "https://github.com/unamezzora/Projet5.git",
@@ -47,12 +47,12 @@
     "_id": "66f42ba7bb8ddc0589300577",
     "title": "Mon Vieux Grimoire",
     "description": "Un site de référencement et de notation de livres",
-    "cover": "http://localhost:4000/images/MVG.png",
+    "cover": "/images/MVG.png",
     "images": [
-      "http://localhost:4000/images/MVG.png",
-      "http://localhost:4000/images/MVG_ajout.png",
-      "http://localhost:4000/images/MVG_livre.png",
-      "http://localhost:4000/images/MVG_login.png"
+      "/images/MVG.png",
+      "/images/MVG_ajout.png",
+      "/images/MVG_livre.png",
+      "/images/MVG_login.png"
     ],
     "skills": "Node.js, Express, MongoDB",
     "github": "https://github.com/unamezzora/Projet6MVG.git",
