@@ -89,6 +89,7 @@ export const Contact = () => {
           className="contact__form__bloc contact__form__bloc--nom"
           value={formData.nom}
           onChange={handleChange}
+          autoComplete="name"
         />
         {errors.nom && <p className="contact__form__error">{errors.nom}</p>}
         <input
@@ -98,6 +99,7 @@ export const Contact = () => {
           className="contact__form__bloc contact__form__bloc--email"
           value={formData.email}
           onChange={handleChange}
+          autoComplete="email"
         />
         {errors.email && <p className="contact__form__error">{errors.email}</p>}
         <textarea
