@@ -3,7 +3,7 @@ import { ScrollToPlugin } from 'gsap/all'
 import photo from '../../assets/photoNB.png'
 import WebDev from '../../assets/WebDev.svg'
 import weblink from '../../assets/weblink.svg'
-import ordinateur from '../../assets/ordinateur.svg'
+import ordinateur from '../../assets/ordi.webp'
 import pages from '../../assets/pages.png'
 import circle from '../../assets/circleB.png'
 import './apropos.scss'
@@ -45,7 +45,11 @@ function Apropos() {
             <div className="blocBleu__image__ellipseBlanche">
               <div className="blocBleu__image__ellipseRose"></div>
             </div>
-            <img src={photo} alt="Tatiana" className="blocBleu__image__photo" />
+            <img
+              src={photo}
+              alt="Tatiana Youssoufa Saidou"
+              className="blocBleu__image__photo"
+            />
           </div>
           <div className="blocBleu__contenu">
             <div className="blocBleu__contenu__text">
@@ -62,11 +66,11 @@ function Apropos() {
                 }}
               />
             </div>
-            <p className="blocBleu__contenu__nom">
+            <h2 className="blocBleu__contenu__nom">
               Tatiana
               <br />
               Youssoufa Saidou
-            </p>
+            </h2>
           </div>
         </div>
       </motion.div>
@@ -151,7 +155,7 @@ function Apropos() {
             <img
               className="blocMenu__contenu2__blocNoir__imageBleu"
               src={circle}
-              alt="Abstraction"
+              alt="Structure réseau web"
             />
             <motion.img
               className="blocMenu__contenu2__blocNoir__image"

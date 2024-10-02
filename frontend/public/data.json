@@ -2,12 +2,12 @@
     "_id": "66f42ba7bb8ddc0829300572",
     "title": "Booki",
     "description": "Une agence de voyage qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix",
-    "cover": "/images/booki.png",
+    "cover": "/images/booki.webp",
     "images": [
-      "/images/booki.png",
-      "/images/booki_1.png",
-      "/images/booki_2.png",
-      "/images/booki_sm.png"
+      "/images/booki.webp",
+      "/images/booki_1.webp",
+      "/images/booki_2.webp",
+      "/images/booki_sm.webp"
     ],
     "skills": "HTML, CSS\n",
     "github": "https://github.com/unamezzora/Projet1.git",
@@ -17,12 +17,12 @@
     "_id": "66f42ba7bb8ddc0829300577",
     "title": "Sophie Bluel",
     "description": "Un site portfolio d’une architecte d’intérieur Sophie Bluel",
-    "cover": "/images/SB.png",
+    "cover": "/images/SB.webp",
     "images": [
-      "/images/SB_ajout.png",
-      "/images/SB_login.png",
-      "/images/SB_supr.png",
-      "/images/SB.png"
+      "/images/SB_ajout.webp",
+      "/images/SB_login.webp",
+      "/images/SB_supr.webp",
+      "/images/SB.webp"
     ],
     "skills": "HTML, CSS, Java Script",
     "github": "https://github.com/unamezzora/Projet3.git",
@@ -32,12 +32,12 @@
     "_id": "66f42ba9bb8ddc0829300577",
     "title": "Kasa",
     "description": "Une entreprise de location d’appartements entre particuliers",
-    "cover": "/images/kasa.png",
+    "cover": "/images/kasa.webp",
     "images": [
-      "/images/kasa.png",
-      "/images/kasa_apropos.png",
-      "/images/kasa_card_sm.png",
-      "/images/kasa_card.png"
+      "/images/kasa.webp",
+      "/images/kasa_apropos.webp",
+      "/images/kasa_card_sm.webp",
+      "/images/kasa_card.webp"
     ],
     "skills": "React, Sass",
     "github": "https://github.com/unamezzora/Projet5.git",
@@ -47,12 +47,12 @@
     "_id": "66f42ba7bb8ddc0589300577",
     "title": "Mon Vieux Grimoire",
     "description": "Un site de référencement et de notation de livres",
-    "cover": "/images/MVG.png",
+    "cover": "/images/MVG.webp",
     "images": [
-      "/images/MVG.png",
-      "/images/MVG_ajout.png",
-      "/images/MVG_livre.png",
-      "/images/MVG_login.png"
+      "/images/MVG.webp",
+      "/images/MVG_ajout.webp",
+      "/images/MVG_livre.webp",
+      "/images/MVG_login.webp"
     ],
     "skills": "Node.js, Express, MongoDB",
     "github": "https://github.com/unamezzora/Projet6MVG.git",

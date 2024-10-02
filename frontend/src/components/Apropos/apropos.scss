@@ -98,15 +98,14 @@
     &__contenu {
         display: flex;
         flex-direction: column;
-        font-size: 40px;
-        @media (max-width: 1024px) {
-            font-size:24px;
-        }
-
-
+        
         &__text{
             display: flex;
             justify-content:space-between;
+            font-size: 40px;
+            @media (max-width: 1024px) {
+                font-size:24px;
+            }
             
             &__dev{
                 width: 25%;
@@ -117,6 +116,10 @@
         &__nom{
             margin: 0;
             font-weight: bold;
+            font-size: 40px;
+            @media (max-width: 1024px) {
+                font-size:24px;
+            }
         }
     }
 }

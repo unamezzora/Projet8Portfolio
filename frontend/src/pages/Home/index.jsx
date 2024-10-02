@@ -29,7 +29,7 @@ function Home() {
         <img
           className="pagehome__imageLink__img"
           src={weblinklong}
-          alt="Abstraction"
+          alt="Schéma de réseau web"
         />
       </div>
       <div id="projets" className="pagehome__projets">

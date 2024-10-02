@@ -20,7 +20,7 @@ function Competence() {
             duration: 2.0,
           }}
         >
-          <img src={html} alt="HTML CSS JavaScript" />
+          <img src={html} alt="Liste des competences: HTML, CSS, JavaScript" />
           <div className="contenu__comp__img__titre contenu__comp__img__titre--html">
             HTML CSS JavaScript
           </div>
@@ -36,7 +36,7 @@ function Competence() {
             duration: 2.0,
           }}
         >
-          <img src={react} alt="React" />
+          <img src={react} alt="Liste des competences: React" />
           <div className="contenu__comp__img__titre contenu__comp__img__titre--react">
             React
           </div>
@@ -51,7 +51,7 @@ function Competence() {
             duration: 2.0,
           }}
         >
-          <img src={sass} alt="Sass" />
+          <img src={sass} alt="Liste des competences: SASS, SCSS" />
           <div className="contenu__comp__img__titre contenu__comp__img__titre--sass">
             Sass
           </div>
@@ -66,7 +66,10 @@ function Competence() {
             duration: 2.0,
           }}
         >
-          <img src={node} alt="Node.js MongoDb Express" />
+          <img
+            src={node}
+            alt="Liste des competences: Node.js, Express, MongoDB"
+          />
           <div className="contenu__comp__img__titre contenu__comp__img__titre--node">
             Node.js <br /> MongoDB <br /> Express
           </div>
@@ -81,7 +84,7 @@ function Competence() {
             duration: 2.0,
           }}
         >
-          <img src={github} alt="GitHub" />
+          <img src={github} alt="Liste des competences: github" />
           <div className="contenu__comp__img__titre contenu__comp__img__titre--github">
             GitHub
           </div>

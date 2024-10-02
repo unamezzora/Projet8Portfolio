@@ -9,7 +9,7 @@ function Card({ projet }) {
   return (
     <div className="card">
       <div className="card__image">
-        <img src={projet.cover} alt={projet.title} />
+        <img src={projet.cover} alt={`Projet: ${projet.title}`} />
       </div>
       <motion.div
         className={`card__couv card__couv--${projet.color}`}
