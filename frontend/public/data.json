@@ -1,7 +1,7 @@
 [{
     "_id": "66f42ba7bb8ddc0829300572",
     "title": "Booki",
-    "description": "Une agence de voyage qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix",
+    "description": "Lors de la création de la page d'accueil de l'agence de voyage Booki, ma mission était de concevoir des interfaces web responsives en intégrant avec précision les maquettes fournies, tout en utilisant HTML et CSS. Durant cette expérience, j'ai rencontré plusieurs défis, notamment l'alignement des éléments sur différentes tailles d'écran et la gestion de la disposition en colonnes ou en grille. Pour surmonter le premier obstacle, j'ai choisi d'utiliser des pourcentages plutôt que des valeurs en pixels fixes, ce qui m'a permis de créer une mise en page plus fluide et adaptable. En parallèle, l'utilisation des media queries a été essentielle pour ajuster les styles CSS en fonction des différentes tailles d'écran, garantissant ainsi un affichage optimal sur mobile, tablette et desktop. En ce qui concerne la gestion des colonnes et des grilles, j'ai opté pour l'utilisation de Flexbox et Grid, deux outils puissants qui m'ont aidée à structurer des mises en page flexibles et harmonieuses, tout en assurant une bonne adaptabilité aux diverses résolutions d'écran. Grâce à ces solutions, j'ai pu mener à bien ce projet tout en renforçant mes compétences en design responsive.",
     "cover": "/images/booki.webp",
     "images": [
       "/images/booki.webp",

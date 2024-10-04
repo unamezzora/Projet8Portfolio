@@ -72,34 +72,36 @@
     position: relative;
     border-radius: 20px;
     width: 100%;
-    &__contenu {
+    &__projets {
+
+        &__contenu {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        height: 1024px;
+        height: 850px;
         width: 100%;
         box-sizing: border-box;
-        @media (max-width: 768px) {
-            flex-wrap: nowrap;
-            align-items: start;
-            height: 100%;
-        }
-      &__titre {
-        font-size: 48px;
-        margin: 20px;
-        width: 45%;
-            @media (max-width: 1024px) {
-                font-size: 40px;
-            }
             @media (max-width: 768px) {
-                font-size: 36px;
-                width: 100%;
-                box-sizing: border-box;
-                padding-left: 20px;
+                flex-wrap: nowrap;
+                align-items: start;
+                height: 100%;
             }
-        }
-    &__projet {
+        &__titre {
+            font-size: 48px;
+            margin: 20px;
+            width: 45%;
+                @media (max-width: 1024px) {
+                    font-size: 40px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 36px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding-left: 20px;
+                }
+            }
 
         &__image {
             margin: 20px;
@@ -110,12 +112,11 @@
             justify-content: center;
             align-items: center;
             border-radius: 20px;
-            
+                
             @media (max-width: 768px) {
                 width: 80%;
                 margin-top: 10px;
                 margin-bottom: 10px;
-
             }
             img {
                 padding: 10px;
@@ -128,19 +129,31 @@
             }
 
         }
-        
+    } 
+        &__description {
 
-    }  
-    &__description {
-            font-size: 24px;
-            text-align: center;
-            width: 40%;
-            padding: 0 40px 0 40px;
-            @media (max-width: 1024px) {
-                font-size: 20px;
+                font-size: 16px;
+                box-sizing: border-box;
+                text-align: justify;
+                width: 100%;
+                margin: 0;
+                padding: 0 40px 50px 60px;
+                line-height: 1.5;
+                text-indent: 20px;
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
+                @media (max-width: 768px) {
+                    padding: 0 0px 50px 20px;
+                    width: 83%;
+                }
             }
-        }
     }
+       
+
+    
+    
+   
     &__compet {
         position: absolute;
         top: 15%;
@@ -160,17 +173,16 @@
     }
     &__lien {
         position: absolute;
-        left: 47%;
-        bottom: 80px;
+        right: 40px;
+        bottom: 10px;
         @media (max-width: 768px) {
-            bottom: 20px;
-            left: 80%;
+            right: 10px;
+
         }
+        
         &__icon {
-            height: 80px;
-            @media (max-width: 768px) {
-                height: 50px;
-            }
+            height: 50px;
+            
         }
 
 

@@ -50,20 +50,24 @@ function Page({ projet }) {
     <div>
       {projet ? (
         <div className="page">
-          <div className="page__contenu">
-            <h1 className="page__contenu__titre"> {projet.title} </h1>
+          <div className="page__projets">
+            <div className="page__projets__contenu">
+              <h1 className="page__projets__contenu__titre">
+                {' '}
+                {projet.title}{' '}
+              </h1>
 
-            {projet.images.map((image, index) => (
-              <div className="page__contenu__projet__image" key={index}>
-                <img
-                  src={image}
-                  alt={projet.title}
-                  onClick={() => handleImageClick(image)}
-                />
-              </div>
-            ))}
-
-            <p className="page__contenu__description"> {projet.description} </p>
+              {projet.images.map((image, index) => (
+                <div className="page__projets__contenu__image" key={index}>
+                  <img
+                    src={image}
+                    alt={projet.title}
+                    onClick={() => handleImageClick(image)}
+                  />
+                </div>
+              ))}
+            </div>
+            <p className="page__projets__description"> {projet.description} </p>
           </div>
           <div className="page__compet"> {projet.skills} </div>
           <Link
@@ -105,7 +109,6 @@ const ViewProjet = ({ mode, projet }) => {
   if (!projet) {
     return <div>Loading...</div>
   }
-
   switch (mode) {
     case 'card':
       return <Card projet={projet} />
@@ -122,9 +125,3 @@ ViewProjet.propTypes = {
 }
 
 export default ViewProjet
-
-/*
-
-
-
-      */

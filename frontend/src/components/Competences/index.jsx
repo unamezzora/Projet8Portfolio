@@ -91,9 +91,11 @@ function Competence() {
         </motion.div>
       </div>
       <div className="contenu__formation">
-        <p className="contenu__formation__text">OpenClassrooms (Bac+2)</p>
-        <p className="contenu__formation__text">Développeur Web</p>
-        <motion.p
+        <p className="contenu__formation__text">
+          OpenClassrooms (Diplôme RNCP niveau 5 Bac+2)
+        </p>
+        <p className="contenu__formation__text">Développeur Informatique</p>
+        <motion.h2
           className="contenu__formation__couv"
           whileHover={{ scaleX: 0.9, transformOrigin: 'right' }}
           style={{ transformOrigin: 'right' }}
@@ -101,7 +103,7 @@ function Competence() {
           dragConstraints={{ left: 0, right: 400 }}
         >
           Formation:
-        </motion.p>
+        </motion.h2>
       </div>
     </div>
   )
