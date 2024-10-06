@@ -16,7 +16,7 @@
   {
     "_id": "66f42ba7bb8ddc0829300577",
     "title": "Sophie Bluel",
-    "description": "Un site portfolio d’une architecte d’intérieur Sophie Bluel",
+    "description": "Pendant ce projet de création d'une page web dynamique pour le site d'une architecte d'intérieur, ma mission consistait à développer la partie Front-End à l'aide de JavaScript et en communiquant avec une API. Un défi que j'ai rencontré c’était de veiller à ce que les différentes actions de l'administrateur, comme l'ajout ou la suppression de projets, soient bien synchronisées avec le serveur, et que l'interface soit mise à jour en temps réel. Pour cela, j'ai mis en place des appels fetch permettant de communiquer avec l'API en utilisant des méthodes HTTP comme GET, POST et DELETE, tout en assurant une gestion efficace des réponses et des erreurs via des promesses.",
     "cover": "/images/SB.webp",
     "images": [
       "/images/SB_ajout.webp",
@@ -31,7 +31,7 @@
   {
     "_id": "66f42ba9bb8ddc0829300577",
     "title": "Kasa",
-    "description": "Une entreprise de location d’appartements entre particuliers",
+    "description": "Dans ce projet, j'ai implémenté le front-end d'une application web de location immobilière en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. Afin de garantir une navigation fluide vers des pages spécifiques selon les identifiants de logement (/logement/ :id), j'ai utilisé le hook useNavigate de React Router pour rediriger l'utilisateur vers une page d'erreur en cas d'ID de logement invalide ou d'URL incorrecte. Cela a permis de gérer efficacement les erreurs de navigation et d'assurer une meilleure expérience utilisateur.",
     "cover": "/images/kasa.webp",
     "images": [
       "/images/kasa.webp",
@@ -46,7 +46,7 @@
   {
     "_id": "66f42ba7bb8ddc0589300577",
     "title": "Mon Vieux Grimoire",
-    "description": "Un site de référencement et de notation de livres",
+    "description": "Dans ce projet, j'ai développé le back-end d'un site de notation de livres en utilisant Express et MongoDB. L'un des principaux défis auxquels j'ai été confronté était la mise en place d'un système d'authentification sécurisé. J'ai implémenté la sécurisation des mots de passe avec bcrypt pour les hacher avant leur stockage en base de données. De plus, j'ai utilisé JSON Web Tokens (JWT) pour gérer l'authentification des utilisateurs, en veillant à ce que seuls les utilisateurs authentifiés puissent accéder aux fonctionnalités sensibles, comme la notation de livres.",
     "cover": "/images/MVG.webp",
     "images": [
       "/images/MVG.webp",

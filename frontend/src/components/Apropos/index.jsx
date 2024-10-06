@@ -205,21 +205,4 @@ function Apropos() {
   )
 }
 
-/*
-<div className="competences">
-        <h1 className="competences__titre">Mes compétences˺</h1>
-      </div>
-      <div className="imageLink">
-        <img className="imageLink__img" src={weblinklong} alt="Abstraction" />
-      </div>
-      <div className="projets">
-        <h1 className="projets__titre">Projets˺</h1>
-      </div>
-      <div className="contact">
-        <h1 className="contact__titre">Me contacter˺</h1>
-      </div>
-*/
-
 export default Apropos
-
-//<Fade bottom delay={100}></Fade>

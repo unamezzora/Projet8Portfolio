@@ -110,23 +110,3 @@ function Competence() {
 }
 
 export default Competence
-
-/*return (
-  <div className="bloc">
-    <div className="bloc__img">
-      <img src={html} alt="" />
-    </div>
-    <div className="bloc__img">
-      <img src={react} alt="" />
-    </div>
-    <div className="bloc__img">
-      <img src={sass} alt="" />
-    </div>
-    <div className="bloc__img">
-      <img src={node} alt="" />
-    </div>
-    <div className="bloc__img">
-      <img src={github} alt="" />
-    </div>
-  </div>
-)*/
