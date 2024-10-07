@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import { ScrollToPlugin } from 'gsap/all'
-import photo from '../../assets/photoNB.png'
+import photo from '../../assets/photoNB.webp'
 import WebDev from '../../assets/WebDev.svg'
 import weblink from '../../assets/weblink.svg'
 import ordinateur from '../../assets/ordi.webp'

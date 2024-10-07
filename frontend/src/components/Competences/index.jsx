@@ -92,7 +92,7 @@ function Competence() {
       </div>
       <div className="contenu__formation">
         <p className="contenu__formation__text">
-          OpenClassrooms (Diplôme RNCP niveau 5 Bac+2)
+          OpenClassrooms <br /> Diplôme RNCP niveau 5 Bac+2
         </p>
         <p className="contenu__formation__text">Développeur Informatique</p>
         <motion.h2

@@ -8,9 +8,10 @@ import PropTypes from 'prop-types'
 function Card({ projet }) {
   return (
     <div className="card">
-      <div className="card__image">
-        <img src={projet.cover} alt={`Projet: ${projet.title}`} />
-      </div>
+      <picture className="card__image">
+        <source srcSet={projet.cover} media="(min-width: 768px)" />
+        <img src={projet.cover_sm} alt={`Projet: ${projet.title}`} />
+      </picture>
       <motion.div
         className={`card__couv card__couv--${projet.color}`}
         whileHover={{ scaleX: 0.8, transformOrigin: 'right' }}

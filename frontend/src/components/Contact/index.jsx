@@ -85,6 +85,7 @@ export const Contact = () => {
         <input
           type="text"
           name="nom"
+          aria-label="Nom"
           placeholder="Nom"
           className="contact__form__bloc contact__form__bloc--nom"
           value={formData.nom}
@@ -95,6 +96,7 @@ export const Contact = () => {
         <input
           type="email"
           name="email"
+          aria-label="email"
           placeholder="email@email.fr"
           className="contact__form__bloc contact__form__bloc--email"
           value={formData.email}
@@ -104,6 +106,7 @@ export const Contact = () => {
         {errors.email && <p className="contact__form__error">{errors.email}</p>}
         <textarea
           name="message"
+          aria-label="Massage"
           placeholder="Message"
           className="contact__form__bloc contact__form__bloc--message"
           value={formData.message}
