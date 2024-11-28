@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import './competence.scss'
 import html from '../../assets/html.png'
 import react from '../../assets/react.png'
@@ -6,7 +7,17 @@ import sass from '../../assets/sass.png'
 import node from '../../assets/node.png'
 import github from '../../assets/github.png'
 
-function Competence() {
+const Competence = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth > 768)
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <div className="contenu">
       <div className="contenu__comp">
@@ -91,20 +102,34 @@ function Competence() {
         </motion.div>
       </div>
       <div className="contenu__formation">
-        <p className="contenu__formation__text">
-          OpenClassrooms <br /> Diplôme RNCP niveau 5 Bac+2
-        </p>
-        <p className="contenu__formation__text">
-          Développeur Informatique:
-          <br />
-          OpenClassrooms <br /> Diplôme RNCP niveau 5 Bac+2
-        </p>
+        <ul className="contenu__formation__block">
+          <li>Construction d'un site web responsive et dynamique.</li>
+          <li>Création d'API et de bases de données.</li>
+          <li>
+            Optimisation des performances et maintenance de sites web déjà
+            existants.
+          </li>
+          <li>Gestion d'un projet web de A à Z.</li>
+        </ul>
+        <div className="contenu__formation__block">
+          <h3 className="contenu__formation__block__titre">
+            Développeur Informatique:
+          </h3>
+          <p className="contenu__formation__block__desc">
+            OpenClassrooms <br /> Diplôme RNCP niveau 5 Bac+2
+          </p>
+        </div>
         <motion.h2
           className="contenu__formation__couv"
-          whileHover={{ scaleX: 0.9, transformOrigin: 'right' }}
+          /*whileHover={{ scaleX: 0.9, transformOrigin: 'right' }}*/
           style={{ transformOrigin: 'right' }}
-          drag="x"
-          dragConstraints={{ left: 0, right: 400 }}
+          drag={isLargeScreen ? 'x' : 'y'}
+          dragConstraints={{
+            left: 0,
+            right: isLargeScreen ? 685 : 0,
+            top: 0,
+            bottom: isLargeScreen ? 0 : 155,
+          }}
         >
           Formation:
         </motion.h2>
