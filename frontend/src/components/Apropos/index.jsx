@@ -1,11 +1,14 @@
+import React, { useState } from 'react'
 import gsap from 'gsap'
 import { ScrollToPlugin } from 'gsap/all'
 import photo from '../../assets/photoNB.webp'
 import WebDev from '../../assets/WebDev.svg'
 import weblink from '../../assets/weblink.svg'
 import ordinateur from '../../assets/ordi.webp'
+import textDW from '../../assets/texteDW.svg'
 import pages from '../../assets/pages.png'
 import circle from '../../assets/circleB.png'
+import cv from '../../assets/TYS-CV.pdf'
 import './apropos.scss'
 import { motion } from 'framer-motion'
 
@@ -22,6 +25,12 @@ function Apropos() {
       })
     }
   }
+
+  const [isImage, setIsImage] = useState(true)
+  const handleImageClick = () => {
+    setIsImage((imageState) => !imageState)
+  }
+
   return (
     <div className="home">
       <motion.div
@@ -78,9 +87,18 @@ function Apropos() {
       <div className="blocMenu">
         <h1 className="blocMenu__titre">Portfolio˺</h1>
         <div className="blocMenu__contenu1">
-          <div className="blocMenu__contenu1__image">
-            <img src={ordinateur} alt="La conception WEB" />
-          </div>
+          <motion.div
+            className="blocMenu__contenu1__image"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={handleImageClick}
+          >
+            {isImage ? (
+              <img src={ordinateur} alt="La conception WEB" />
+            ) : (
+              <img src={textDW} alt="à propos de moi" />
+            )}
+          </motion.div>
 
           <motion.div
             className="blocMenu__contenu1__blocs"
@@ -97,11 +115,7 @@ function Apropos() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <a
-                href="https://www.linkedin.com/in/tatiana-zemliakova-youssoufa"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={cv} target="_blank" rel="noreferrer">
                 CV
               </a>
             </motion.div>

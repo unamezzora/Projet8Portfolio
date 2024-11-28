@@ -94,7 +94,11 @@ function Competence() {
         <p className="contenu__formation__text">
           OpenClassrooms <br /> Diplôme RNCP niveau 5 Bac+2
         </p>
-        <p className="contenu__formation__text">Développeur Informatique</p>
+        <p className="contenu__formation__text">
+          Développeur Informatique:
+          <br />
+          OpenClassrooms <br /> Diplôme RNCP niveau 5 Bac+2
+        </p>
         <motion.h2
           className="contenu__formation__couv"
           whileHover={{ scaleX: 0.9, transformOrigin: 'right' }}
