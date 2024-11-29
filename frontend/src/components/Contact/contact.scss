@@ -18,6 +18,9 @@
             border: 0.5vw solid $beige;
             font-size: 24px;
             font-family: $principal-font-family;
+            @media (max-width: 768px) {
+                border-radius: 10px;
+            }
             &--email {
                 background-color: rgb(255, 166, 158, 0.25);
                 border-color: $rose;
