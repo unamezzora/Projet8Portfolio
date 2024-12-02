@@ -1,7 +1,7 @@
 import './card.scss'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import github from '../../assets/github.png'
+import github from '../../assets/gh.png'
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
@@ -77,7 +77,13 @@ function Page({ projet }) {
             target="_blank"
             rel="noreferrer"
           >
-            <img className="page__lien__icon" src={github} alt="GitHub" />
+            <motion.img
+              className="page__lien__icon"
+              src={github}
+              alt="GitHub"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            />
           </Link>
         </div>
       ) : (

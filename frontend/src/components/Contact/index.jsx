@@ -1,8 +1,11 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
-import enveloppe from '../../assets/envelope .svg'
+import enveloppe from '../../assets/envelope.png'
+import linkedin from '../../assets/in.png'
+import github from '../../assets/gh.png'
 import './contact.scss'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 export const Contact = () => {
   const form = useRef()
@@ -127,9 +130,45 @@ export const Contact = () => {
       {messageStatus && <p className="contact__message">{messageStatus}</p>}
 
       <div className="contact__adresse">
-        <img src={enveloppe} alt="Enveloppe" />
-        <p>tatianayouss@gmail.com</p>
+        <div className="contact__adresse__icon">
+          <img src={enveloppe} alt="Mail" />
+          <motion.a
+            href="mailto:tatianayouss@gmail.com"
+            className="contact__adresse__icon__mail"
+            whileHover={{ scale: 1.01 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            tatianayouss@gmail.com
+          </motion.a>
+        </div>
+        <Link
+          to="https://github.com/unamezzora"
+          className="contact__adresse__icon"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <motion.img
+            src={github}
+            alt="GitHub"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          />
+        </Link>
+        <Link
+          to="https://github.com/unamezzora"
+          className="contact__adresse__icon"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <motion.img
+            src={linkedin}
+            alt="Linkedin"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          />
+        </Link>
       </div>
+      <div className="contact__adresse__linkedin"></div>
     </div>
   )
 }
