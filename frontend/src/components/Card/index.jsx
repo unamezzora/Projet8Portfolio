@@ -2,6 +2,7 @@ import './card.scss'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import github from '../../assets/gh.png'
+import close from '../../assets/Close.png'
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
@@ -70,7 +71,18 @@ function Page({ projet }) {
             </div>
             <p className="page__projets__description"> {projet.description} </p>
           </div>
-          <div className="page__compet"> {projet.skills} </div>
+          <div className="page__compet">
+            {projet.skills}
+            <Link className="page__compet__ferm" to="/">
+              <motion.img
+                className="page__compet__ferm__icon"
+                src={close}
+                alt="Retourner sur la page d’accueil"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              />
+            </Link>
+          </div>
           <Link
             to={projet.github}
             className="page__lien"

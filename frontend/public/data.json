@@ -1,6 +1,6 @@
 [{
     "_id": "66f42ba7bb8ddc0829300572",
-    "title": "Booki",
+    "title": "Booki˺",
     "description": "Lors de la création de la page d'accueil de l'agence de voyage Booki, ma mission était de concevoir des interfaces web responsives en intégrant avec précision les maquettes fournies, tout en utilisant HTML et CSS. Durant cette expérience, j'ai rencontré plusieurs défis, notamment l'alignement des éléments sur différentes tailles d'écran et la gestion de la disposition en colonnes ou en grille. Pour surmonter le premier obstacle, j'ai choisi d'utiliser des pourcentages plutôt que des valeurs en pixels fixes, ce qui m'a permis de créer une mise en page plus fluide et adaptable. En parallèle, l'utilisation des media queries a été essentielle pour ajuster les styles CSS en fonction des différentes tailles d'écran, garantissant ainsi un affichage optimal sur mobile, tablette et desktop. En ce qui concerne la gestion des colonnes et des grilles, j'ai opté pour l'utilisation de Flexbox et Grid, deux outils puissants qui m'ont aidée à structurer des mises en page flexibles et harmonieuses, tout en assurant une bonne adaptabilité aux diverses résolutions d'écran. Grâce à ces solutions, j'ai pu mener à bien ce projet tout en renforçant mes compétences en design responsive.",
     "cover": "/images/booki_cover.webp",
     "cover_sm": "/images/booki_cover_sm.webp",
@@ -17,7 +17,7 @@
   },
   {
     "_id": "66f42ba7bb8ddc0829300577",
-    "title": "Sophie Bluel",
+    "title": "Sophie Bluel˺",
     "description": "Pendant ce projet de création d'une page web dynamique pour le site d'une architecte d'intérieur, ma mission consistait à développer la partie Front-End à l'aide de JavaScript et en communiquant avec une API. Un défi que j'ai rencontré c’était de veiller à ce que les différentes actions de l'administrateur, comme l'ajout ou la suppression de projets, soient bien synchronisées avec le serveur, et que l'interface soit mise à jour en temps réel. Pour cela, j'ai mis en place des appels fetch permettant de communiquer avec l'API en utilisant des méthodes HTTP comme GET, POST et DELETE, tout en assurant une gestion efficace des réponses et des erreurs via des promesses.",
     "cover": "/images/SB_cover.webp",
     "cover_sm": "/images/SB_cover_sm.webp",
@@ -33,7 +33,7 @@
   },
   {
     "_id": "66f42ba9bb8ddc0829300577",
-    "title": "Kasa",
+    "title": "Kasa˺",
     "description": "Dans ce projet, j'ai implémenté le front-end d'une application web de location immobilière en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. Afin de garantir une navigation fluide vers des pages spécifiques selon les identifiants de logement (/logement/ :id), j'ai utilisé le hook useNavigate de React Router pour rediriger l'utilisateur vers une page d'erreur en cas d'ID de logement invalide ou d'URL incorrecte. Cela a permis de gérer efficacement les erreurs de navigation et d'assurer une meilleure expérience utilisateur.",
     "cover": "/images/kasa_cover.webp",
     "cover_sm": "/images/kasa_cover_sm.webp",
@@ -49,7 +49,7 @@
   },
   {
     "_id": "66f42ba7bb8ddc0589300577",
-    "title": "Mon Vieux Grimoire",
+    "title": "Mon Vieux Grimoire˺",
     "description": "Dans ce projet, j'ai développé le back-end d'un site de notation de livres en utilisant Express et MongoDB. L'un des principaux défis auxquels j'ai été confronté était la mise en place d'un système d'authentification sécurisé. J'ai implémenté la sécurisation des mots de passe avec bcrypt pour les hacher avant leur stockage en base de données. De plus, j'ai utilisé JSON Web Tokens (JWT) pour gérer l'authentification des utilisateurs, en veillant à ce que seuls les utilisateurs authentifiés puissent accéder aux fonctionnalités sensibles, comme la notation de livres.",
     "cover": "/images/MVG_cover.webp",
     "cover_sm": "/images/MVG_cover_sm.webp",

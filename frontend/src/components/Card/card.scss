@@ -111,13 +111,14 @@
 
         &__image {
             margin: 20px;
-            height: 38%;
+            height: 35%;
             width: 40%;
-            background-color: black;
+            background-color: $gris;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 20px;
+            cursor: zoom-in;
                 
             @media (max-width: 768px) {
                 width: 80%;
@@ -130,7 +131,7 @@
                 width: 100%;
                 box-sizing: border-box;
                 object-fit: cover;
-                object-position: top left;
+                object-position: top center;
                 border-radius: 20px;
             }
 
@@ -155,11 +156,7 @@
                 }
             }
     }
-       
 
-    
-    
-   
     &__compet {
         position: absolute;
         top: 15%;
@@ -168,6 +165,11 @@
         transform: scale(-1);
         font-size: 36px;
         color: $gris;
+        &__ferm {
+            position: absolute;
+            bottom: -100px;
+
+        }
         @media (max-width: 1024px) {
             font-size: 30px;
         }
@@ -185,13 +187,6 @@
             right: 10px;
 
         }
-        
-        &__icon {
-            height: 50px;
-            
-        }
-
-
 
     }
     
@@ -215,6 +210,7 @@
     max-height: 100%;
     border-radius: 20px;
     border: 6px solid black;
+    cursor: zoom-out;
   }
   
   .modal__close {
