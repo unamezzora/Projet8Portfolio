@@ -131,7 +131,7 @@ export const Contact = () => {
 
       <div className="contact__adresse">
         <div className="contact__adresse__icon">
-          <img src={enveloppe} alt="Mail" />
+          <img src={enveloppe} alt="Envoyer un mail" />
           <motion.a
             href="mailto:tatianayouss@gmail.com"
             className="contact__adresse__icon__mail"
@@ -149,20 +149,20 @@ export const Contact = () => {
         >
           <motion.img
             src={github}
-            alt="GitHub"
+            alt="Consulter mon profil GitHub"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           />
         </Link>
         <Link
-          to="https://github.com/unamezzora"
+          to="https://linkedin.com/in/tatiana-youssoufa"
           className="contact__adresse__icon"
           target="_blank"
           rel="noreferrer"
         >
           <motion.img
             src={linkedin}
-            alt="Linkedin"
+            alt="Consulter mon profil LinkedIn"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           />

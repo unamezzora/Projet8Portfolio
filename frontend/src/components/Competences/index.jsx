@@ -6,6 +6,8 @@ import react from '../../assets/react.png'
 import sass from '../../assets/sass.png'
 import node from '../../assets/node.png'
 import github from '../../assets/github.png'
+import git from '../../assets/git.webp'
+import figma from '../../assets/figma.webp'
 
 const Competence = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768)
@@ -100,6 +102,36 @@ const Competence = () => {
             GitHub
           </div>
         </motion.div>
+        <motion.div
+          className="contenu__comp__img"
+          initial={{ opacity: 0, x: 400 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            ease: 'easeOut',
+            type: 'spring',
+            duration: 2.0,
+          }}
+        >
+          <img src={git} alt="Liste des competences: git" />
+          <div className="contenu__comp__img__titre contenu__comp__img__titre--git">
+            Git
+          </div>
+        </motion.div>
+        <motion.div
+          className="contenu__comp__img"
+          initial={{ opacity: 0, x: 400 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            ease: 'easeOut',
+            type: 'spring',
+            duration: 2.0,
+          }}
+        >
+          <img src={figma} alt="Liste des competences: figma" />
+          <div className="contenu__comp__img__titre contenu__comp__img__titre--figma">
+            Figma
+          </div>
+        </motion.div>
       </div>
       <div className="contenu__formation">
         <ul className="contenu__formation__block">
@@ -112,12 +144,12 @@ const Competence = () => {
           <li>Gestion d'un projet web de A à Z.</li>
         </ul>
         <div className="contenu__formation__block">
-          <h3 className="contenu__formation__block__titre">
+          <h2 className="contenu__formation__block__titre">
             Développeur Informatique:
-          </h3>
-          <p className="contenu__formation__block__desc">
+          </h2>
+          <h3 className="contenu__formation__block__desc">
             OpenClassrooms <br /> Diplôme RNCP niveau 5 Bac+2
-          </p>
+          </h3>
         </div>
         <motion.h2
           className="contenu__formation__couv"

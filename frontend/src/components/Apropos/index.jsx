@@ -115,7 +115,12 @@ function Apropos() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <a href={cv} target="_blank" rel="noreferrer">
+              <a
+                href={cv}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Télécharger CV au format PDF"
+              >
                 CV
               </a>
             </motion.div>
